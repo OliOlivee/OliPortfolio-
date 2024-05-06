@@ -1,0 +1,252 @@
+/* index.html CSS Style */
+
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  min-height: 96vh; /* Changed from height to min-height */
+  margin: 0 10rem;
+  box-sizing: border-box;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* 1. PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.bluetext{
+  color: #1e80c1;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* 2. EXPERIENCE SECTION */
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+  
+}
+
+
+
+/* 3. PROJECTS SECTION */
+
+/* Projects Section */
+.project {
+  padding: 2rem 0;
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 0 auto; /* Center align the container */
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  justify-content: space-around; /* Align items at the start of the line */
+  padding: 0; /* Remove padding that might affect width calculations */
+  
+}
+
+.project-card {
+  flex: 0 1 calc(50% - 20px); /* Adjusted width calculation */
+  margin: 10px; /* Reduced margin */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: white;
+  list-style-type: none;
+
+}
+
+.card-header img {
+  width: 100%;
+  height: 400px;
+  object-fit: fit;
+  object-position: center;
+  border-bottom: 2px solid #1e80c1; /* Adding a solid border for the image */
+}
+
+
+.card-body {
+  padding: 20px;
+}
+
+
+.tags .tag {
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.project-title, .project-description {
+  margin: 10px 0;
+}
+
+.read-more {
+  display: block; /* Makes link take the full width of container */
+  text-decoration: none;
+  color: #1e80c1;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center; /* Center aligns the text */
+}
+
+
+/* 4. CONTACT  Section */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 0; /* Retain generous padding for top and bottom */
+ 
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around; /* Keep content well-distributed */
+  width: 100%; /* Full width to contain the icons properly */
+  max-width: 400px; /* Max width for better control */
+  padding: 1.5rem;
+  margin: 5rem auto;
+  border-radius: 3rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+}
+
+.contact a img {
+  width: 45px; /* Consistent size for all icons */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.contact a:hover img {
+  transform: translateY(-10px); /* Lift effect on hover */
+}
+
+
+
+/* 5. FOOTER SECTION */
+/* In footer.css */

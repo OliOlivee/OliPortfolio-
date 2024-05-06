@@ -1,0 +1,194 @@
+/* General Settings */
+
+/* Hero Section Styles */
+.hero-section .hero-container {
+    padding: 30px;
+    padding-top: 10vh;
+    margin: 0 60px; 
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-section img {
+    width: 50%; 
+    height: auto; 
+}
+
+.hero-section .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+}
+
+.hero-section .hero-text h1 {
+    color: #006BD3;
+    font-size: 2.5rem; /* Make hero title prominently larger */
+    margin-bottom: 8px;
+}
+
+.hero-section .hero-text p {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    
+}
+
+.hero-section .project-details .detail {
+    font-size: 1rem; /* Larger text for better readability */
+    margin-bottom: 10px; /* Spacing between detail lines */
+    color: black;
+}
+
+/* Common Styles for all Section Containers */
+.section-container {
+    padding: 30px 60px; /* Consistent padding as Hero section */
+    margin-top: 20px; /* Uniform top margin */
+    margin-bottom: 20px; /* Uniform bottom margin */
+}
+
+/* Common Styles for Section Titles */
+.section-container .section-title h1,
+.section-container .section-title h2 {
+    color: #006BD3;
+    margin: 0 120px 20px 120px; /* Consistent margins including top and bottom */
+}
+
+
+.section-container .section-title h1 {
+    font-size: 2.0rem; /* Size for main headings */
+}
+
+.section-container .section-title h2 {
+    font-size: 1.5rem; /* Size for subheadings */
+}
+
+/* Common Styles for Section Details */
+.section-container .section-details p {
+    font-size: 1.2rem;
+    color: black;
+    line-height: 1.5; /* Line height for readability */
+    margin: 0 180px 20px 180px; /* Consistent margins including top and bottom */
+}
+
+/* How Might We Section Styles */
+.how-might-we-section-details {
+    margin: 0 180px 20px 180px;
+    background-color: #006BD3; /* Deep green background */
+    text-align: center; /* Center text alignment */
+    padding: 20px 40px; /* Padding for internal spacing */
+    
+    border-radius: 8px; /* Rounded corners */
+}
+
+.how-might-we-section-details p {
+    color:white;
+    font-size: 1.2rem;
+}
+
+/* Section 5: preliminary research CSS Style */
+/* Research Boxes */
+.research-boxes {
+    margin: 0 180px 20px 180px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensures that the boxes are spaced out evenly */
+    gap: 20px; /* Space between the boxes */
+}
+
+.research-box {
+    border: 1px solid #006BD3; /* Light grey border for definition */
+    padding: 20px; /* Padding inside each box */
+    margin-bottom: 20px; /* Space below each box */
+    border-radius: 10px; /* Rounded corners */
+    flex-basis: calc(50% - 10px); /* Adjusts the box size to fit 2 per row, accounting for the gap */
+    border-color: #006BD3;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.research-box ul,
+.key-insights-box ul {
+    padding-left: 20px; /* Adds indentation to the list */
+    margin: 10px 0; /* Vertical spacing around the list */
+}
+
+.research-box li,
+.key-insights-box li {
+    margin-bottom: 8px; /* Spacing between list items */
+    text-indent: -10px; /* Adjusts the starting position of the text relative to the bullet */
+    padding-left: 10px; /* Additional padding to align text properly after the bullet */
+}
+
+.research-box h2 {
+    color: #0056b3; /* Dark blue for headings */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.research-box p {
+    font-size: 1rem; /* Standard font size for content */
+    line-height: 1.6; /* Good line height for readability */
+    color: #333; /* Dark grey for text */
+}
+
+/* Key Insights Box */
+.key-insights-box {
+    background-color: #006BD3; /* Light blue background */
+    border: 1px solid #006BD3; /* Border color */
+    padding: 20px; /* Padding inside the box */
+    margin-bottom: 20px; /* Space below the box */
+    border-radius: 10px; /* Rounded corners */
+    flex-basis: calc(50% - 10px); /* Adjusts the box size to fit 2 per row, accounting for the gap */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.key-insights-box h2 {
+    color: white; /* Dark grey for heading */
+}
+
+.key-insights-box p {
+    font-size: 1rem; /* Standard font size for content */
+    line-height: 1.6; /* Good line height for readability */
+    color: white; /* Dark grey for text */
+}
+
+.key-insights-box ul{
+    color:white;
+}
+
+/* Section 6: CSS  */
+/* Data Analysis Section Styles */
+#Quantitative-research .section-container {
+    margin: 0 180px 20px 180px;
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    align-items: center; /* Center-align content horizontally */
+}
+  
+#Quantitative-research .section-content {
+    margin: 0 180px 20px 180px;
+    display: flex;
+    flex-direction: row; /* Arrange content horizontally */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Center-align content vertically */
+    color:black; 
+}
+  
+#Quantitative-research img {
+    max-width: 50%; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#Quantitative-research .section-content p {
+    color: black; 
+}
+
+
+
+
+
+
+
+

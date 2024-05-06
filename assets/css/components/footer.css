@@ -1,0 +1,13 @@
+/* Footer CSS style */
+
+footer {
+    width: 100%;
+    padding: 20px 0; /* Padding top and bottom */
+    background-color: #83c4ef; /* Give a different background color */
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0; /* Remove any default margin */
+    padding: 10px 0; /* Add padding for spacing */
+  }

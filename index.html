@@ -3,106 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+
     <title>Olivia (Xiaofan) Huang Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <meta name="title" content="Olivia Huang - Product Designer">
+    <meta name="description" content="This is Olivia Huang's personal portfolio">
+
+    <!-- CUSTOM CSS -->
+    <!-- Main CSS style -->
+    <link rel="stylesheet" href="./assets/css/pages/main.css" />
+    <!-- current page CSS style -->
+    <link rel="stylesheet" href="./assets/css/pages/index.css" />
+    <!-- component css: NavBar + Footer -->
+    <link rel="stylesheet" href="./assets/css/components/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/components/footer.css" />
+ 
   </head>
+  
+  
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Olivia Huang</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Olivia Huang</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    <!-- Navigation bar with links to different html files -->
+    <div class="navWrapper">
+      <nav class="navBar">
+        <a href="index.html" class="logo">Olivia Huang</a> 
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="nav-links">
+          <ul>
+            <li><a style="color: #1e80c1;" href="index.html">Work</a></li>
+            <li><a href="aboutme.html">About Me</a></li>   
+          </ul>
         </div>
       </div>
-    </nav>
+    </div>
+    
+    <!-- homepage content -->
+    <!-- Section 1: hero profile page -->
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/Oli.animation.png" alt="Olivia's profile picture" />
+        <img src="./assets/images/Oli.animation.png" alt="Olivia's profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Olivia Huang</h1>
-        <p class="section__text__p2">UI/UX Designer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Oli_resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
-        </div>
+        <h1 class="title" style="color:#1e80c1;">Olivia Huang</h1>
+        <h2> passionate about designing 
+          <span class="bluetext">practical</span> solutions that pinpoint user problems, focus on 
+          <span class="bluetext">user-centered</span> design, and drive decisions with 
+          <span class="bluetext">data</span>. </h2>
+        <br>
       </div>
     </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          
-          <div class="text-container">
-            <h1> Hi, I am Olivia!</h1>
-            <p>
-                I am a UI/UX designer based in Los Angles & New York. I am passionate about creating something meaningful and helpful to connect people by understanding their experience and needs. Most imporatntly, creating inclusive designs that people will enjoy using!
-            </p>
-            <br> <!-- adds a line break between paragraphs -->
 
-            <p><small>Informatics(HCI) & Business Information Management @ UC Irvine</small></p>
-            <p><small>Information Science @ UC Irvine</small></p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
+    <!-- Section 2: Experience  -->
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
@@ -113,10 +69,9 @@
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/images/checkmark.png"
                   alt="Experience icon"
-                  class="icon"
-                />
+                  class="icon"/>
                 <div>
                   <h3>HTML</h3>
                   <p>Experienced</p>
@@ -124,10 +79,9 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/images/checkmark.png"
                   alt="Experience icon"
-                  class="icon"
-                />
+                  class="icon"/>
                 <div>
                   <h3>CSS</h3>
                   <p>Experienced</p>
@@ -135,10 +89,9 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/images/checkmark.png"
                   alt="Experience icon"
-                  class="icon"
-                />
+                  class="icon"/>
                 <div>
                   <h3>Python</h3>
                   <p>Intermediate</p>
@@ -146,10 +99,9 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/images/checkmark.png"
                   alt="Experience icon"
-                  class="icon"
-                />
+                  class="icon"/>
                 <div>
                   <h3>React</h3>
                   <p>Intermediate</p>
@@ -157,10 +109,9 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/images/checkmark.png"
                   alt="Experience icon"
-                  class="icon"
-                />
+                  class="icon"/>
                 <div>
                   <h3>TypeScript</h3>
                   <p>Basic</p>
@@ -168,10 +119,9 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/images/checkmark.png"
                   alt="Experience icon"
-                  class="icon"
-                />
+                  class="icon"/>
                 <div>
                   <h3>Java</h3>
                   <p>Intermediate</p>
@@ -179,10 +129,9 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/images/checkmark.png"
                   alt="Experience icon"
-                  class="icon"
-                />
+                  class="icon"/>
                 <div>
                   <h3>JavaScript</h3>
                   <p>Basic</p>
@@ -191,10 +140,9 @@
 
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/images/checkmark.png"
                   alt="Experience icon"
-                  class="icon"
-                />
+                  class="icon"/>
                 <div>
                   <h3>Vue.js</h3>
                   <p>Intermediate</p>
@@ -207,10 +155,9 @@
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/prototype.png"
+                  src="./assets/images/prototype.png"
                   alt="Experience icon"
-                  class="icon"
-                />
+                  class="icon"/>
                 <div>
                   <h3>Prototyping</h3>
                   <p>Experience</p>
@@ -218,10 +165,9 @@
               </article>
               <article>
                 <img
-                  src="./assets/user research.png"
+                  src="./assets/images/user research.png"
                   alt="Experience icon"
-                  class="icon"
-                />
+                  class="icon"/>
                 <div>
                   <h3>User Research</h3>
                   <p>Experience</p>
@@ -229,10 +175,9 @@
               </article>
               <article>
                 <img
-                  src="./assets/diagram.png"
+                  src="./assets/images/diagram.png"
                   alt="Experience icon"
-                  class="icon"
-                />
+                  class="icon"/>
                 <div>
                   <h3>Affinity Diagram</h3>
                   <p>Experience</p>
@@ -240,10 +185,9 @@
               </article>
               <article>
                 <img
-                  src="./assets/testing.png"
+                  src="./assets/images/testing.png"
                   alt="Experience icon"
-                  class="icon"
-                />
+                  class="icon"/>
                 <div>
                   <h3>Usability testing</h3>
                   <p>Experience</p>
@@ -251,10 +195,9 @@
               </article>
               <article>
                 <img
-                  src="./assets/ps.png"
+                  src="./assets/images/ps.png"
                   alt="Experience icon"
-                  class="icon"
-                />
+                  class="icon"/>
                 <div>
                   <h3>Visual design</h3>
                   <p>Experience</p>
@@ -262,10 +205,9 @@
               </article>
               <article>
                 <img
-                  src="./assets/figma.png"
+                  src="./assets/images/figma.png"
                   alt="Experience icon"
-                  class="icon"
-                />
+                  class="icon"/>
                 <div>
                   <h3>User interface design</h3>
                   <p>Experience</p>
@@ -275,128 +217,97 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
     </section>
+    
+    <!-- section 3: selected top 3 - 4 projects -->
     <section id="projects">
       <p class="section__text__p1">Browse My Selected</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Endorsement-project 1.png"
-                alt="Endorsement System"
-                class="Endorsement System project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Endorsement System</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://sites.google.com/uci.edu/team2b-endorsementsystem/designing-for-digital-thriving'"
-              >
-                Website
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://docs.google.com/presentation/d/1RVTAjQcWjPW_iYugkf0YnBr6QXkI4PbRFcq4gGXSgGQ/edit?usp=sharing'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/PlateFul- project 2.png"
-                alt="PlateFul- project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">PlateFul APP</h2>
-            <div class="btn-container">
-              
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://docs.google.com/presentation/d/1oPNM2qwY5A2O0zTWTYyo620uHi2wFchDERZ33JkrhXU/edit?usp=sharing'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/BeatingMelanoma.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">BeatingMelanoma Website</h2>
-            <div class="btn-container">
-              
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.beatingmelanoma.com/'"
-              >
-                Website
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://docs.google.com/presentation/d/1o9UI03fV3lUxSTl0_kB5fV74OSsMkMY4fnMml2J6Qqg/edit?usp=sharing'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
+      
+      <!-- Home page section with project cards -->
+      <div class="project">
+        
+        <ul class="project-cards">
+
+          <!-- Project 1: Google -->
+          <li class="project-card">
+            <div class="card-header">
+              <img src="./assets/images/Google/GooglePoster.png" alt="Ecolab Project Image">
+                </div>
+                <div class="card-body">
+                    <div class="tags"><span class="tag">UX Research</span></div>
+                    <h2 class="project-title">Sellers Productivity UX Research @ Google Cloud Platform</h2>
+                    <a  class="read-more"> Project in progress</a>
+                </div>
+            </li>
+
+
+          <!-- Project 2: Ecolab -->
+          <li class="project-card">
+            <div class="card-header">
+              <img src="./assets/images/Ecolab/EcolabPoster.png" alt="Ecolab Project Image">
+                </div>
+                <div class="card-body">
+                    <div class="tags"><span class="tag">UX/UI Design</span></div>
+                    <h2 class="project-title">Gamification Integration & Redesign @Ecolab</h2>
+                    <a href="ecolabPJ.html" class="read-more">View Case Study</a>
+                </div>
+            </li>
+            <!-- More cards -->
+
+            <!-- Project 3: BeatingMekanoma -->
+          <li class="project-card">
+            <div class="card-header">
+              <img src="./assets/images/Beating/BeatingMelanoma.png" alt="BeatingMelanoma Image">
+                </div>
+                <div class="card-body">
+                    <div class="tags"><span class="tag">UX/UI Design</span><span class="tag">video editing</span></div>
+                    
+                    <h2 class="project-title">Educational Website About Skin Cancer @ Hoag</h2>
+                    <a href="https://www.beatingmelanoma.com/" class="read-more">View the website</a>
+                </div>
+            </li>
+
+            <!-- Project 4: PlateFul -->
+          <li class="project-card">
+            <div class="card-header">
+              <img src="./assets/images/PlateFul/PlateFul- project 2.png" alt="PlateFul Image">
+                </div>
+                <div class="card-body">
+                    <div class="tags"><span class="tag"> UX/UI Design</span></div>
+                    <h2 class="project-title">Design Meal Prepping application  @ PlateFul</h2>
+                    <a href="https://docs.google.com/presentation/d/16sfnB2K_7Hycwu1cS88HsJTEBM-EapHNidawt5sRzjE/edit?usp=sharing" class="read-more">View Case Study</a>
+                </div>
+            </li>
+        
+      </ul>
+  </div>
+      
+</section>
+
+    <!-- Section 4: contact info -->
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
+      <p class="section__text__p1">Thank you for stopping by</p>
+      <p class="section__text__p1">Having any questions or feeback ? </p>
       <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Xiaofanhuang0324@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/xiaofan-huang-628536210/">LinkedIn</a></p>
-        </div>
+      <div class="contact">
+        <a href="Xiaofanhuang0324@gmail.com" target="_blank">
+          <img src="../assets/images/email.png" alt="email icon" id="email"/>
+        </a>
+
+        <a href="https://www.linkedin.com/in/xiaofan-huang-628536210/" target="_blank">
+          <img src="../assets/images/linkedin.png" alt="linkedIn" id="linkedin"/>
+        </a>
+
+        <a href="https://github.com/OliOlivee" target="_blank">
+          <img src="../assets/images/github.png" alt="github icon" id="github"/>
+        </a>
       </div>
     </section>
+
+
+    <!-- Section 5: footer -->
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
       <p>Copyright &#169; 2024 Olivia Huang. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>

@@ -1,0 +1,42 @@
+/* About me section */
+
+.about-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 180px 20px 180px;
+    gap: 40px; /* Adjust as needed */
+    max-width: 1200px;
+    padding: 50px;
+}
+  
+.text-container {
+    max-width: 600px;
+}
+  
+h1 {
+    font-size: 2.5rem; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+}
+  
+p {
+    margin-bottom: 10px; /* Adjust as needed */
+}
+  
+.small-text {
+    font-size: 0.8rem; /* Adjust as needed */
+    color: #666; /* Adjust as needed */
+}
+  
+  /* Profile picture */
+.section__pic-container {
+    flex-shrink: 0;
+}
+  
+.about-pic {
+    width: 100%; /* Adjust as needed */
+    max-width: 400px; /* Adjust as needed */
+    border-radius: 10px; /* Adjust as needed */
+}
+  
+  

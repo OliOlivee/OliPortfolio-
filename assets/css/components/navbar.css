@@ -1,0 +1,46 @@
+/* NavBar.CSS */
+.navWrapper {
+  width: 100%;
+  margin-left: 3px;
+  margin-right: 1px;
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+}
+
+.navBar{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+nav ul{
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul a{
+  color: black;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  font-weight: 400;
+  text-decoration: none;
+} 
+
+.logo{
+  color: #1e80c1;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-left: 2rem;
+  text-decoration: none;
+}
+
+/* Example: underline on hover */
+nav ul a:hover {
+  text-decoration: underline; 
+  color: inherit;
+}
