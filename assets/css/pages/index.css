@@ -151,46 +151,53 @@ article {
 
 
 
+
 /* 3. PROJECTS SECTION */
 
 /* Projects Section */
 .project {
   padding: 2rem 0;
-  width: 100%; 
-  max-width: 1200px; 
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto; /* Center align the container */
 }
 
 .project-cards {
   display: flex;
-  flex-wrap: wrap; /* Allows items to wrap onto the next line */
-  justify-content: space-around; /* Align items at the start of the line */
-  padding: 0; /* Remove padding that might affect width calculations */
-  
+  flex-wrap: wrap;
+  justify-content: space-around; /* Ensure cards are evenly distributed */
+  padding: 0;
 }
 
 .project-card {
-  flex: 0 1 calc(50% - 20px); /* Adjusted width calculation */
-  margin: 10px; /* Reduced margin */
+  width: calc(45% - 10px); /* Maintain fixed width */
+  margin: 5px; /* Consistent margin */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   background-color: white;
   list-style-type: none;
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  height: 450px; /* Reduced fixed height for the card */
+}
 
+.card-header {
+  height: 250px; /* Fixed height for the image container */
+  overflow: hidden; /* Prevents overflow of the image */
 }
 
 .card-header img {
   width: 100%;
-  height: 400px;
-  object-fit: fit;
-  object-position: center;
-  border-bottom: 2px solid #1e80c1; /* Adding a solid border for the image */
+  height: 100%; /* Full height of the container */
+  object-fit: cover; /* Cover to fit the image properly within the header */
 }
-
 
 .card-body {
-  padding: 20px;
+  padding: 15px; /* Slightly reduced padding */
+  height: calc(200px - 30px); /* Remaining height minus padding */
+  display: flex;
+  flex-direction: column; /* Organizes content vertically */
+  justify-content: space-between; /* Space between title, tags, and button */
 }
-
 
 .tags .tag {
   background-color: #e0e0e0;
@@ -200,18 +207,40 @@ article {
   display: inline-block;
 }
 
-.project-title, .project-description {
+.project-title {
+  font-size: 1.1em; /* Ensures consistent font size */
   margin: 10px 0;
 }
 
 .read-more {
-  display: block; /* Makes link take the full width of container */
+  align-self: center; /* Centers the link within the card body */
   text-decoration: none;
   color: #1e80c1;
   font-weight: bold;
-  margin-top: 10px;
-  text-align: center; /* Center aligns the text */
+  padding: 10px 20px;
+  border: 2px solid #1e80c1; /* Adds a border to the read more button */
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
 }
+
+.read-more:hover {
+  background-color: #1e80c1; /* Changes background on hover */
+  color: white; /* Changes text color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .card-header {
+    height: 200px; /* Adjust image container height for smaller screens */
+  }
+}
+
+
 
 
 /* 4. CONTACT  Section */
@@ -250,3 +279,5 @@ article {
 
 /* 5. FOOTER SECTION */
 /* In footer.css */
+
+/* media queries CSS Style */

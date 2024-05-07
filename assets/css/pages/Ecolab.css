@@ -42,6 +42,26 @@
     color: black;
 }
 
+/* Hero Section Responsive Styles */
+@media (max-width: 768px) {
+    .hero-section .hero-container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        padding: 20px;
+        margin: 0; /* Remove margins for smaller screens */
+    }
+
+    .hero-section img {
+        width: 100%; /* Full width images on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Space between image and text */
+    }
+
+    .hero-section .hero-text {
+        align-items: center; /* Center alignment of text for smaller screens */
+    }
+}
+
+
 /* Common Styles for all Section Containers */
 .section-container {
     padding: 30px 60px; /* Consistent padding as Hero section */
@@ -73,6 +93,23 @@
     margin: 0 180px 20px 180px; /* Consistent margins including top and bottom */
 }
 
+/* Common Styles for Section Titles */
+.section-container .section-title h1 {
+    font-size: 1.75rem; /* Reduced size for main headings */
+}
+
+.section-container .section-title h2 {
+    font-size: 1.25rem; /* Reduced size for subheadings */
+}
+
+.hero-section .hero-text h1 {
+    font-size: 2rem; /* Reduced hero title size */
+}
+
+.hero-section .hero-text p {
+    font-size: 1.2rem; /* Adjusted to maintain hierarchy */
+}
+
 /* How Might We Section Styles */
 .how-might-we-section-details {
     margin: 0 180px 20px 180px;
@@ -90,23 +127,32 @@
 
 /* Section 5: preliminary research CSS Style */
 /* Research Boxes */
+/* Research Boxes Layout */
 .research-boxes {
-    margin: 0 180px 20px 180px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Ensures that the boxes are spaced out evenly */
-    gap: 20px; /* Space between the boxes */
+    justify-content: space-between; /* Adjusted for even spacing */
+    gap: 20px; /* Maintains space between boxes */
+    margin: 0 180px 20px 180px;
 }
 
 .research-box {
-    border: 1px solid #006BD3; /* Light grey border for definition */
-    padding: 20px; /* Padding inside each box */
-    margin-bottom: 20px; /* Space below each box */
-    border-radius: 10px; /* Rounded corners */
-    flex-basis: calc(50% - 10px); /* Adjusts the box size to fit 2 per row, accounting for the gap */
-    border-color: #006BD3;
-    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    flex: 1 1 30%; /* Allows three boxes to fit in one row */
+    min-width: 250px; /* Minimum width to prevent too much shrinkage */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #006BD3;
 }
+
+.key-insights-box {
+    flex: 1 1 100%; /* Takes full row by itself */
+    padding: 20px;
+    margin-top: 20px; /* Added space above for separation */
+    border-radius: 10px;
+    border: 1px solid #006BD3;
+    background-color: #006BD3;
+}
+
 
 .research-box ul,
 .key-insights-box ul {
@@ -132,17 +178,6 @@
     color: #333; /* Dark grey for text */
 }
 
-/* Key Insights Box */
-.key-insights-box {
-    background-color: #006BD3; /* Light blue background */
-    border: 1px solid #006BD3; /* Border color */
-    padding: 20px; /* Padding inside the box */
-    margin-bottom: 20px; /* Space below the box */
-    border-radius: 10px; /* Rounded corners */
-    flex-basis: calc(50% - 10px); /* Adjusts the box size to fit 2 per row, accounting for the gap */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-    box-sizing: border-box; /* Ensures padding and border are included in the width */
-}
 
 .key-insights-box h2 {
     color: white; /* Dark grey for heading */

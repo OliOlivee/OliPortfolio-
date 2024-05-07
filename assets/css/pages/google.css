@@ -1,0 +1,123 @@
+/* General Settings */
+/* Hero Section Styles */
+.hero-section .hero-container {
+    padding: 30px;
+    padding-top: 10vh;
+    margin: 0 60px; 
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-section img {
+    width: 50%; 
+    height: auto; 
+}
+
+.hero-section .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+}
+
+.hero-section .hero-text h1 {
+    color: #006BD3;
+    font-size: 2.5rem; /* Make hero title prominently larger */
+    margin-bottom: 8px;
+}
+
+.hero-section .hero-text p {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    
+}
+
+.hero-section .project-details .detail {
+    font-size: 1rem; /* Larger text for better readability */
+    margin-bottom: 10px; /* Spacing between detail lines */
+    color: black;
+}
+
+/* Hero Section Responsive Styles */
+@media (max-width: 768px) {
+    .hero-section .hero-container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        padding: 20px;
+        margin: 0; /* Remove margins for smaller screens */
+    }
+
+    .hero-section img {
+        width: 100%; /* Full width images on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Space between image and text */
+    }
+
+    .hero-section .hero-text {
+        align-items: center; /* Center alignment of text for smaller screens */
+    }
+}
+
+/* Section Container Styles */
+.section-container {
+    padding: 30px 60px;
+    margin: 20px 120px; /* Adjusted margins */
+    background-color: #FFFFFF; /* White background for sections */
+}
+
+.section-container .section-title h1,
+.section-container .section-title h2 {
+    color: #4285F4; /* Google Blue */
+    margin-bottom: 10px;
+}
+
+.section-container .section-title h1 {
+    font-size: 2.0rem;
+}
+
+.section-container .section-title h2 {
+    font-size: 1.5rem;
+}
+
+.section-container .section-details p {
+    font-size: 1.2rem;
+    color: #3C4043; /* Google grey */
+    line-height: 1.5;
+}
+
+/* Special Box Styles for Research Findings */
+.research-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjusted for even spacing */
+    gap: 20px;
+}
+
+.research-box {
+    flex: 1 1 30%; /* Allows three boxes to fit in one row */
+    min-width: 250px; /* Minimum width to prevent too much shrinkage */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #9AA0A6; /* Google grey 500 */
+    background-color: #FFFFFF; /* White background */
+}
+
+.key-insights-box {
+    flex: 1 1 100%; /* Takes full row by itself */
+    background-color: #34A853; /* Google Green */
+    color: #FFFFFF; /* White text */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px;
+    background-color: #3C4043; /* Google grey */
+    color: #FFFFFF; /* White text */
+    text-align: center;
+}
+

@@ -23,23 +23,31 @@
   
   
   <body>
+    <script src="./assets/js/script.js"></script>
     <!-- Navigation bar with links to different html files -->
-    <div class="navWrapper">
-      <nav class="navBar">
-        <a href="index.html" class="logo">Olivia Huang</a> 
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div class="nav-links">
-          <ul>
-            <li><a  href="index.html">Work</a></li>
-            <li><a style="color: #1e80c1;" href="aboutme.html">About Me</a></li>   
-          </ul>
+    <nav id="navBar">
+      <a class="logo" href="index.html" style="color: #1e80c1;" >Olivia Huang</a>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html" >Work</a></li>
+          <li><a href="aboutme.html" style="color:#1e80c1" >About Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <a class="logo" href="index.html" style="color: #1e80c1;">Olivia Huang</a>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()" >Work</a></li>
+          <li><a href="aboutme.html" onclick="toggleMenu()" style="color:#1e80c1" >About</a></li>
         </div>
       </div>
-    </div>
+    </nav>
     
     <!-- homepage content -->
     <section id="about-details"  class="about-details-container">

@@ -1,47 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, 
-        initial-scale=1.0">
-    
-        <title>Olivia (Xiaofan) Huang Website</title>
-        <meta name="title" content="Olivia Huang - Product Designer">
-        <meta name="description" content="This is Olivia Huang's personal portfolio">
-    
-        <!-- CUSTOM CSS -->
-        <link rel="stylesheet" href="./assets/css/pages/portfolio.css" /> 
-        <link rel="stylesheet" href="./assets/css/pages/main.css" />
-        <link rel="stylesheet" href="./assets/css/components/navbar.css" />
-        <link rel="stylesheet" href="./assets/css/pages/project.css" />
-    </head>
-    
-    <body>
-        <!---------------Header----------------->
-        <header>
-            <!-- Navigation bar -->
-            <nav>
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                </ul>
-                <h1 class="logo">Olivia Huang</h1>
-            </nav>
-        </header>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
 
-        <!---------------Portfolio----------------->
-        <main>
-            <div class = "hero-container">
-                <img src="./assets/images/Ecolab/Ecolab Project.png" alt="Hero Image ecolab">
-                <div class="hero-text">
-                    <h1>Google Project</h1>
-                 <p>UX research </p>
+    <title>Olivia (Xiaofan) Huang Website</title>
+    <meta name="title" content="Olivia Huang - Product Designer">
+    <meta name="description" content="This is Olivia Huang's personal portfolio">
+
+    <!-- CUSTOM CSS -->
+    <!-- Main CSS style -->
+    <link rel="stylesheet" href="./assets/css/pages/main.css" />
+    <!-- current page CSS style -->
+    <link rel="stylesheet" href="./assets/css/pages/google.css" />
+    <!-- component css: NavBar + Footer -->
+    <link rel="stylesheet" href="./assets/css/components/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/components/footer.css" />
+ 
+  </head>
+  
+  
+  <body>
+    <script src="./assets/js/script.js"></script>
+    <!-- Navigation bar with links to different html files -->
+    <nav id="navBar">
+      <a class="logo" href="index.html" style="color: #1e80c1;" >Olivia Huang</a>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html" style="color:#1e80c1">Work</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <a class="logo" href="index.html" style="color: #1e80c1;">Olivia Huang</a>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()" style="color:#1e80c1">Work</a></li>
+          <li><a href="aboutme.html" onclick="toggleMenu()">About</a></li>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- homepage content -->
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+<section id="hero-section" class="hero-section" style="background-color: #FFFFFF; color: #000000;">
+    <div class="hero-container">
+        <img src="./assets/images/Google/GooglePoster.png" alt="Hero Image Google">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>
+                    <span style="color:#4285F4; display: inline-block; margin-right: -4px;">G</span>
+                    <span style="color:#EA4335; display: inline-block; margin-right: -4px;">o</span>
+                    <span style="color:#FBBC05; display: inline-block; margin-right: -4px;">o</span>
+                    <span style="color:#4285F4; display: inline-block; margin-right: -4px;">g</span>
+                    <span style="color:#34A853; display: inline-block; margin-right: -4px;">l</span>
+                    <span style="color:#EA4335; display: inline-block; margin-right: -4px;">e</span>
+                    UX Research
+                </h1>
+                <p><strong>Define </strong>Seller Productivity Metrics and Provide Data-Driven Recommendations</p>
+            </div>
+            <br>
+            <div class="project-details">
+                <p class="detail"><strong>Duration:</strong> 16 Weeks</p>
+                <p class="detail"><strong>Role:</strong> UX Researcher</p>
+                <p class="detail"><strong>Team:</strong> Olivia Huang, Ryun Shim, Helena Xiong, Tingming-Lai, Shengrong Jiang, Andrew Jenkin</p>
+                <p class="detail"><strong>Type:</strong> Mobile & Wearable Technology Application</p>
+                <p class="detail"><strong>Tools:</strong> Figma, Google Scholar, Miro</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Project Overview -->
+    <section id="project-overview" class="section-container" style="background-color: #FFFFFF; color: #3C4043;">
+        <div class="section-title">
+            <h1>Project Overview:</h1>
+            <h2>Enhancing Seller Productivity Through UX Research</h2>
+        </div>
+        <div class="section-details">
+            <p>This study aims to identify key factors influencing CEs' productivity and provide actionable insights to streamline workflows, enhance performance, and ultimately maximize value delivery to clients and the organization.</p>
+            <ul>
+                <li>👔 <strong>Client Need:</strong> Identify factors affecting productivity and thus improve efficiency and effectiveness of Customer Engineers.</li>
+                <li>📈 <strong>Business Need:</strong> To drive revenue and improve satisfaction level among employees.</li>
+                <li>💻 <strong>Customer Engineer Need:</strong> Streamline sales approach, tool usage, and team collaboration to enhance client interactions and sales.</li>
+                <li>👩‍💼 <strong>Customer Engineer’s Client Need:</strong> Receive customized solutions that cater the platform to their unique business processes.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- How Might We -->
+    <section id="how-might-we" class="section-container" style="background-color: #4285F4; color: #FFFFFF;">
+        <div class="section-title">
+            <h2>HOW MIGHT WE?</h2>
+        </div>
+        <div class="section-details">
+            <p>How might we enhance the efficiency and effectiveness of Customer Engineers in the Cloud business by pinpointing pain points and proposing design recommendations to streamline their workflows?</p>
+        </div>
+    </section>
+
+    <!-- Preliminary Research -->
+    <section id="preliminary-research" class="section-container" style="background-color: #FBBC04; color: #3C4043;">
+        <div class="section-title">
+            <h1>2. Preliminary Research</h1>
+        </div>
+        <div class="section-details">
+            <p>The review of 21 research papers served to inform and contextualize the role of Customer Engineers (CEs) within the broader sales environment.</p>
+            <div class="research-boxes">
+                <div class="research-box">
+                    <h2>💻 Emphasis on Digitalization</h2>
+                    <p>The digitalization of complex B2B sales processes can both enable and pose challenges for the seller. While it enhances sales efficiency, it also requires adaptation and learning of new technological tools (Rodríguez et al., 2020).</p>
+                </div>
+                <div class="research-box">
+                    <h2>💸 Impact of Sales Enablement Technologies</h2>
+                    <p>The use of sales enablement technologies aims to reduce administrative tasks and increase the amount of time spent selling, leading to improved sales performance (Franck & Dampérat, 2023).</p>
+                </div>
+                <div class="research-box">
+                    <h2>🗣️ Integration of Communication Tools</h2>
+                    <p>The integrated use of social media, digital, and traditional communication tools in the B2B sales process impacts various stages, from initial contact to post-sale relationship management, and enhances engagement and relationship management (Fraccastoro et al., 2021).</p>
+                </div>
+                <!-- Key Insights Box -->
+                <div class="key-insights-box">
+                    <h2>The Right Tools and Support Can Supercharge Sales Productivity</h2>
+                    <p>Studies highlight the significant impact of sales tools and technologies, such as CRM systems and sales automation platforms, in streamlining sales processes and enhancing overall efficiency. Moreover, scholars have identified various factors influencing sales productivity, ranging from access to quality leads and sales training programs to organizational support and goal alignment.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-        </main>
-    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Olivia Huang. All rights reserved.</p>
+    </footer>
 
     </body>
 </html>

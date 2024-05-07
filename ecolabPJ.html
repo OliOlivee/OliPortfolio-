@@ -14,7 +14,7 @@
     <!-- Main CSS style -->
     <link rel="stylesheet" href="./assets/css/pages/main.css" />
     <!-- current page CSS style -->
-    <link rel="stylesheet" href="./assets/css/pages/project.css" />
+    <link rel="stylesheet" href="./assets/css/pages/Ecolab.css" />
     <!-- component css: NavBar + Footer -->
     <link rel="stylesheet" href="./assets/css/components/navbar.css" />
     <link rel="stylesheet" href="./assets/css/components/footer.css" />
@@ -23,23 +23,31 @@
   
   
   <body>
+    <script src="./assets/js/script.js"></script>
     <!-- Navigation bar with links to different html files -->
-    <div class="navWrapper">
-      <nav class="navBar">
-        <a href="index.html" class="logo">Olivia Huang</a> 
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div class="nav-links">
-          <ul>
-            <li><a style="color: #1e80c1;" href="index.html">Work</a></li>
-            <li><a href="aboutme.html">About Me</a></li>   
-          </ul>
+    <nav id="navBar">
+      <a class="logo" href="index.html" style="color: #1e80c1;" >Olivia Huang</a>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html" style="color:#1e80c1">Work</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <a class="logo" href="index.html" style="color: #1e80c1;">Olivia Huang</a>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()" style="color:#1e80c1">Work</a></li>
+          <li><a href="aboutme.html" onclick="toggleMenu()">About</a></li>
         </div>
       </div>
-    </div>
+    </nav>
     
     <!-- homepage content -->
 
@@ -108,6 +116,8 @@
           <p>To improve infection control in healthcare environments, 
             This research was conducted to deepen our understanding of hospital settings and identify key factors that influence the effectiveness of personal protective equipment (PPE) usage and hand hygiene practices. The goal is to pinpoint the main challenges and obstacles that hinder proper compliance. By doing so, we aim to develop strategies that not only incentivize cleaning staff during their routine tasks but also enhance the monitoring of room cleaning results and maintain high standards of cleanliness to ensure the safety of both patients and healthcare workers. </p>
         </div>
+
+
 
         <div class="research-boxes">
           <!-- Box 1: Hand Hygiene Compliance -->
